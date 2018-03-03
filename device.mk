@@ -140,6 +140,9 @@ PRODUCT_PACKAGES += \
     camera.msm8937 \
     libmm-qcamera \
     mm-qcamera-app \
+    OnePlusGallery_Luis \
+	MIUICamera_Luis \
+    GoogleCamera_Luis_santoni \
     Snap
 
 PRODUCT_PACKAGES += \
