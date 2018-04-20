@@ -118,14 +118,14 @@ function configure_memory_parameters() {
     fi
 
     # Enable swap initially only for 1 GB targets
-    if [ "$MemTotal" -le "$SWAP_ENABLE_THRESHOLD" ] && [ "$swap_enable" == "true" ]; then
+    if [ "$swap_enable" == "true" ]; then
         # Static swiftness
         echo 1 > /proc/sys/vm/swap_ratio_enable
         echo 70 > /proc/sys/vm/swap_ratio
 
-        # Swap disk - 200MB size
+        # Swap disk - 750MB size
         if [ ! -f /data/system/swap/swapfile ]; then
-            dd if=/dev/zero of=/data/system/swap/swapfile bs=1m count=200
+            dd if=/dev/zero of=/data/system/swap/swapfile bs=1m count=750
         fi
         mkswap /data/system/swap/swapfile
         swapon /data/system/swap/swapfile -p 32758
