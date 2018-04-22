@@ -26,6 +26,6 @@ BOARD_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/rr_santoni/santoni:8.1.0/OPM2.171019.029/5773c868ae:userdebug/test-keys \
-    PRIVATE_BUILD_DESC="rr-santoni-userdebug 8.1.0  OPM2.171019.029 5773c868ae test-keys"
+    PRIVATE_BUILD_DESC="santoni-user 7.1.2 N2G47H V9.2.1.0.NAMCNEK release-keys"
 	
+BUILD_FINGERPRINT=Xiaomi/santoni/santoni:7.1.2/N2G47H/V9.2.1.0.NAMCNEK:user/release-keys
